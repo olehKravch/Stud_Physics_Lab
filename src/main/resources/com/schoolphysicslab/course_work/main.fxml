@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="mainGridPane" alignment="CENTER" prefHeight="900" prefWidth="1600.0" stylesheets="@main_style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolphysicslab.course_work.HelloController">
+   <VBox fx:id="vbox" alignment="CENTER" prefHeight="450.0" prefWidth="450.0" styleClass="vbox" stylesheets="@mainpane_style.css">
+      <children>
+         <Pane prefHeight="450.0" prefWidth="450.0" styleClass="pane" stylesheets="@mainpane_style.css">
+            <children>
+                <!-- <padding>
+                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                </padding> -->
+            
+                <Label fx:id="welcomeText" layoutX="50.0" layoutY="21.0" text=" School Physics Lab ">
+                  <font>
+                     <Font name="MV Boli" size="36.0" />
+                  </font>
+               </Label>
+                <Button alignment="CENTER" cache="true" layoutX="139.0" layoutY="131.0" onAction="#loginAsTeacher" prefHeight="55.0" prefWidth="168.0" stylesheets="@button_style.css" text="Увійти як вчитель">
+                  <font>
+                     <Font name="Segoe UI" size="15.0" />
+                  </font>
+               </Button>
+            
+                <Button layoutX="143.0" layoutY="223.0" onAction="#loginAsStudent" prefHeight="55.0" prefWidth="161.0" stylesheets="@button_style.css" text="Увійти як учень">
+                    <font>
+                        <Font name="Segoe UI" size="15.0" />
+                    </font>
+                </Button>
+            
+                <Button layoutX="150.0" layoutY="321.0" onAction="#exit" prefHeight="55.0" prefWidth="150.0" stylesheets="@exitButton_style.css" text="Вийти">
+                    <font>
+                        <Font name="Segoe UI" size="15.0" />
+                    </font>
+                </Button>
+            </children>
+         </Pane>
+      </children>
+   </VBox>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'course_work.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedcourse_work_id() {
+        dtjava.embed(
+            {
+                id : 'course_work_id',
+                url : 'course_work.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '1600',
+                height : '900'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedcourse_work_id);
+</script>
+
+</head><body>
+<h2>Test page for <b>course_work</b></h2>
+  <b>Webstart:</b> <a href='course_work.jnlp' onclick="return launchApplication('course_work.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

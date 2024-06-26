@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="900" prefWidth="1600.0" stylesheets="@pane_style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolphysicslab.course_work.LoginAsStudentController">
+
+    <Button alignment="BASELINE_LEFT" layoutX="174.0" layoutY="99.0" mnemonicParsing="false" onAction="#returnToMainStage1" prefHeight="30.0" prefWidth="129.0" text="&lt; На головну">
+        <font>
+            <Font name="Segoe UI" size="14.0" />
+        </font></Button>
+    <Pane fx:id="stRegPane" layoutX="675.0" layoutY="139.0" prefHeight="600.0" prefWidth="600.0" styleClass="pane" stylesheets="@mainpane_style.css" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="675.0" AnchorPane.topAnchor="150.0">
+        <children>
+            <Label layoutX="146.0" layoutY="89.0" text="Оберіть свій клас:">
+                <font>
+                    <Font name="Segoe UI" size="18.0" />
+                </font>
+            </Label>
+            <ChoiceBox fx:id="classChoiceBox" layoutX="340.0" layoutY="89.0" prefWidth="150.0">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="7 - А" />
+                        <String fx:value="7 - Б" />
+                        <String fx:value="7 - В" />
+                        <String fx:value="7 - Г" />
+                        <String fx:value="8 - А" />
+                        <String fx:value="8 - Б" />
+                        <String fx:value="8 - В" />
+                        <String fx:value="8 - Г" />
+                        <String fx:value="9 - А" />
+                        <String fx:value="9 - Б" />
+                        <String fx:value="9 - В" />
+                        <String fx:value="9 - Г" />
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+         <Label layoutX="246.0" layoutY="392.0" text="Введіть свoє ім'я">
+            <font>
+               <Font name="Segoe UI" size="18.0" />
+            </font>
+         </Label>
+         <TextField fx:id="surnameReg" layoutX="202.0" layoutY="342.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="nameReg" layoutX="199.0" layoutY="422.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </TextField>
+         <Label layoutX="233.0" layoutY="472.0" text="Введіть по-батькові">
+            <font>
+               <Font name="Segoe UI" size="18.0" />
+            </font>
+         </Label>
+         <TextField fx:id="patronymicReg" layoutX="202.0" layoutY="495.0">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </TextField>
+            <Label layoutX="220.0" layoutY="37.0" text="Реєстрація учня">
+                <font>
+                    <Font name="Segoe UI Bold" size="24.0" />
+                </font>
+            </Label>
+            <Label layoutX="207.0" layoutY="131.0" text="Введіть адресу ел. пошти">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="emailFieldReg" layoutX="180.0" layoutY="168.0" prefHeight="39.0" prefWidth="260.0">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </TextField>
+            <Label layoutX="248.0" layoutY="217.0" text="Введіть пароль">
+                <font>
+                    <Font name="Segoe UI" size="18.0" />
+                </font>
+            </Label>
+            <PasswordField fx:id="passwordFieldReg" layoutX="198.0" layoutY="247.0">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </PasswordField>
+            <Button layoutX="198.0" layoutY="584.0" mnemonicParsing="false" onAction="#registerStudent" stylesheets="@button_style.css" text="Зареєструватись">
+                <font>
+                    <Font name="Segoe UI" size="24.0" />
+                </font>
+            </Button>
+            <Label layoutX="217.0" layoutY="305.0" prefHeight="27.0" prefWidth="188.0" text="Введіть своє прізвище" textFill="#030303">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+         <Label fx:id="errorLabelReg" alignment="CENTER" layoutX="113.0" layoutY="545.0" prefHeight="27.0" prefWidth="394.0" textFill="#f00202">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+        </children></Pane>
+</AnchorPane>

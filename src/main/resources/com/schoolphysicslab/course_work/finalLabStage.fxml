@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="finalPane" prefHeight="900.0" prefWidth="1600.0" stylesheets="@pane_style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolphysicslab.course_work.LabController">
+   <children>
+      <Label layoutX="527.0" layoutY="185.0" text="ВИКОНАННЯ РОБОТИ ЗАВЕРШЕНО!" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="48.0" />
+         </font>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Label>
+      <Label layoutX="639.0" layoutY="347.0" text="ВСІ ВІДПОВІДІ ЗБЕРЕЖЕНІ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Button layoutX="867.0" layoutY="522.0" mnemonicParsing="false" onAction="#returnToMainStage1" stylesheets="@button_style.css" text="На головну">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="907.0" layoutY="686.0" mnemonicParsing="false" onAction="#exit" stylesheets="@exitButton_style.css" text="Вихід">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

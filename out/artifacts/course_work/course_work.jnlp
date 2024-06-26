@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="course_work.jnlp">
+  <information>
+    <title>course_work</title>
+    <vendor>Unknown</vendor>
+    <description>course_work</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="annotations-13.0.jar" size="17536" download="eager" />
+    <jar href="apiguardian-api-1.1.2.jar" size="6806" download="eager" />
+    <jar href="audio-4.0.9.jar" size="2370" download="eager" />
+    <jar href="controlsfx-11.1.1.jar" size="1376830" download="eager" />
+    <jar href="countries-17.0.22.jar" size="5015894" download="eager" />
+    <jar href="course_work.jar" size="407051" download="eager" />
+    <jar href="formsfx-core-11.5.0.jar" size="112610" download="eager" />
+    <jar href="fxgl-11.17.jar" size="990506" download="eager" />
+    <jar href="fxgl-core-11.17.jar" size="375321" download="eager" />
+    <jar href="fxgl-entity-11.17.jar" size="559959" download="eager" />
+    <jar href="fxgl-gameplay-11.17.jar" size="202417" download="eager" />
+    <jar href="fxgl-io-11.17.jar" size="98880" download="eager" />
+    <jar href="fxgl-scene-11.17.jar" size="75321" download="eager" />
+    <jar href="heatmap-17.0.9.jar" size="15141" download="eager" />
+    <jar href="ikonli-core-12.3.1.jar" size="14473" download="eager" />
+    <jar href="ikonli-javafx-12.3.1.jar" size="37509" download="eager" />
+    <jar href="jackson-annotations-2.12.1.jar" size="75700" download="eager" />
+    <jar href="jackson-core-2.12.1.jar" size="365214" download="eager" />
+    <jar href="jackson-databind-2.12.1.jar" size="1514483" download="eager" />
+    <jar href="javafx-base-17.0.2-win.jar" size="746034" download="eager" />
+    <jar href="javafx-base-17.0.2.jar" size="302" download="eager" />
+    <jar href="javafx-controls-17.0.2-win.jar" size="2545470" download="eager" />
+    <jar href="javafx-controls-17.0.2.jar" size="306" download="eager" />
+    <jar href="javafx-fxml-17.0.2-win.jar" size="129485" download="eager" />
+    <jar href="javafx-fxml-17.0.2.jar" size="302" download="eager" />
+    <jar href="javafx-graphics-17.0.2-win.jar" size="5768743" download="eager" />
+    <jar href="javafx-graphics-17.0.2.jar" size="306" download="eager" />
+    <jar href="javafx-media-17.0.2-win.jar" size="1089807" download="eager" />
+    <jar href="javafx-media-17.0.2.jar" size="303" download="eager" />
+    <jar href="javafx-swt.jar" size="36882" download="eager" />
+    <jar href="javafx-web-17.0.2-win.jar" size="26795632" download="eager" />
+    <jar href="javafx-web-17.0.2.jar" size="301" download="eager" />
+    <jar href="javafx.base.jar" size="754168" download="eager" />
+    <jar href="javafx.controls.jar" size="2585104" download="eager" />
+    <jar href="javafx.fxml.jar" size="130175" download="eager" />
+    <jar href="javafx.graphics.jar" size="4281185" download="eager" />
+    <jar href="javafx.media.jar" size="277257" download="eager" />
+    <jar href="javafx.swing.jar" size="89704" download="eager" />
+    <jar href="javafx.web.jar" size="727735" download="eager" />
+    <jar href="kotlin-stdlib-common-1.5.10.jar" size="197355" download="eager" />
+    <jar href="lifecycle-4.0.9.jar" size="4464" download="eager" />
+    <jar href="mysql-connector-j-8.4.0.jar" size="2533399" download="eager" />
+    <jar href="opentest4j-1.2.0.jar" size="7653" download="eager" />
+    <jar href="protobuf-java-3.25.1.jar" size="1875070" download="eager" />
+    <jar href="storage-4.0.9.jar" size="2094" download="eager" />
+    <jar href="tilesfx-17.1.9.jar" size="4973330" download="eager" />
+    <jar href="toolbox-17.0.22.jar" size="138895" download="eager" />
+    <jar href="toolboxfx-17.0.28.jar" size="735972" download="eager" />
+    <jar href="util-4.0.9.jar" size="9912" download="eager" />
+    <jar href="validatorfx-0.3.1.jar" size="27104" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="1600" height="900" main-class="com.schoolphysicslab.course_work.HelloApplication"  name="course_work" />
+  <update check="background"/>
+</jnlp>

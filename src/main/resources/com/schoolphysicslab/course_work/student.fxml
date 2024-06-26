@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="studentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1013.0" prefWidth="1800.0" stylesheets="@pane_style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolphysicslab.course_work.LoginAsStudentController">
+   <children>
+      <Button alignment="BASELINE_LEFT" layoutX="174.0" layoutY="99.0" onAction="#returnToMainStage" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="&lt; На головну">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font></Button>
+      <Label fx:id="welcomeText" layoutX="748.0" layoutY="63.0" text=" School Physics Lab " textFill="#fffdfd">
+         <font>
+            <Font name="MV Boli" size="48.0" />
+         </font>
+         <effect>
+            <SepiaTone />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="800.0" layoutY="176.0" prefHeight="70.0" prefWidth="363.0" stylesheets="@label_style.css" text=" Оберіть свій клас ">
+         <font>
+            <Font name="Segoe UI" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="303.0" layoutY="275.0" onAction="#chooseClass7A" mnemonicParsing="false" prefHeight="84.0" prefWidth="237.0" stylesheets="@button_style.css" text="7 - A">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="303.0" layoutY="408.0" onAction="#chooseClass7B" mnemonicParsing="false" prefHeight="84.0" prefWidth="237.0" stylesheets="@button_style.css" text="7 - Б">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="303.0" layoutY="545.0" onAction="#chooseClass7C" mnemonicParsing="false" prefHeight="84.0" prefWidth="237.0" stylesheets="@button_style.css" text="7 - В">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="303.0" layoutY="686.0" onAction="#chooseClass7D" mnemonicParsing="false" prefHeight="84.0" prefWidth="237.0" stylesheets="@button_style.css" text="7 - Г">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="863.0" layoutY="275.0" onAction="#chooseClass8A" mnemonicParsing="false" prefHeight="84.0" prefWidth="237.0" stylesheets="@button_style.css" text="8 - A">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="863.0" layoutY="408.0" onAction="#chooseClass8B" mnemonicParsing="false" prefHeight="84.0" prefWidth="237.0" stylesheets="@button_style.css" text="8 - Б">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="863.0" layoutY="545.0" onAction="#chooseClass8C" mnemonicParsing="false" prefHeight="84.0" prefWidth="237.0" stylesheets="@button_style.css" text="8 - В">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="863.0" layoutY="686.0" onAction="#chooseClass8D" mnemonicParsing="false" prefHeight="84.0" prefWidth="237.0" stylesheets="@button_style.css" text="8 - Г">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="1423.0" layoutY="275.0" onAction="#chooseClass9A" mnemonicParsing="false" prefHeight="84.0" prefWidth="237.0" stylesheets="@button_style.css" text="9 - A">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="1423.0" layoutY="408.0" onAction="#chooseClass9B" mnemonicParsing="false" prefHeight="84.0" prefWidth="237.0" stylesheets="@button_style.css" text="9 - Б">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="1423.0" layoutY="545.0" onAction="#chooseClass9C" mnemonicParsing="false" prefHeight="84.0" prefWidth="237.0" stylesheets="@button_style.css" text="9 - В">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="1423.0" layoutY="686.0" onAction="#chooseClass9D" mnemonicParsing="false" prefHeight="84.0" prefWidth="237.0" stylesheets="@button_style.css" text="9 - Г">
+         <font>
+            <Font name="Segoe UI" size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="925.0" layoutY="831.0" onAction="#exit" mnemonicParsing="false" stylesheets="@exitButton_style.css" text="Вихід">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

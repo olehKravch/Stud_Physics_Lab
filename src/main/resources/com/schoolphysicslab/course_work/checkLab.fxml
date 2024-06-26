@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" stylesheets="@pane_style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolphysicslab.course_work.CheckLabController">
+    <Button alignment="BASELINE_LEFT" layoutX="99.0" layoutY="48.0" mnemonicParsing="false" onAction="#returnToMainStage" prefHeight="30.0" prefWidth="129.0" text="&lt; На головну">
+        <font>
+            <Font name="Segoe UI" size="14.0" />
+        </font></Button>
+    <ScrollPane fx:id="checkLabPane" fitToWidth="true" layoutX="331.0" layoutY="127.0" prefHeight="800.0" prefWidth="1300.0" styleClass="pane" stylesheets="@mainpane_style.css" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="325.0" AnchorPane.topAnchor="100.0">
+        <content>
+            <VBox prefHeight="2600.0">
+                <children>
+                    <Pane prefHeight="694.0" prefWidth="1294.0">
+                        <children>
+                            <Label fx:id="teacherName" alignment="CENTER" layoutX="310.0" layoutY="58.0" prefHeight="39.0" prefWidth="662.0" textAlignment="CENTER">
+                                <font>
+                                    <Font name="Segoe UI" size="32.0" />
+                                </font>
+                            </Label>
+                     <Label layoutX="506.0" layoutY="135.0" text="Для перевірки роботи:">
+                        <font>
+                           <Font name="Segoe UI Bold" size="24.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="479.0" layoutY="199.0" text="Оберіть клас:">
+                        <font>
+                           <Font size="24.0" />
+                        </font>
+                     </Label>
+                            <ChoiceBox fx:id="classChoiceBox" layoutX="651.0" layoutY="204.0" prefWidth="150.0">
+                                <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                        <String fx:value="7 - А" />
+                                        <String fx:value="7 - Б" />
+                                        <String fx:value="7 - В" />
+                                        <String fx:value="7 - Г" />
+                                        <String fx:value="8 - А" />
+                                        <String fx:value="8 - Б" />
+                                        <String fx:value="8 - В" />
+                                        <String fx:value="8 - Г" />
+                                        <String fx:value="9 - А" />
+                                        <String fx:value="9 - Б" />
+                                        <String fx:value="9 - В" />
+                                        <String fx:value="9 - Г" />
+                                    </FXCollections>
+                                </items>
+                            </ChoiceBox>
+                     <Label layoutX="525.0" layoutY="274.0" text="Введіть прізвище учня:">
+                        <font>
+                           <Font size="24.0" />
+                        </font>
+                     </Label>
+                     <TextField fx:id="surnameStud" layoutX="514.0" layoutY="328.0" prefHeight="39.0" prefWidth="275.0">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </TextField>
+                     <Label layoutX="556.0" layoutY="418.0" text="Введіть ім'я учня:">
+                        <font>
+                           <Font size="24.0" />
+                        </font>
+                     </Label>
+                     <TextField fx:id="nameStud" layoutX="539.0" layoutY="471.0">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </TextField>
+                     <Button layoutX="547.0" layoutY="595.0" mnemonicParsing="false" onAction="#findStudLabs" stylesheets="@button_style.css" text="Знайти роботи учня">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Button>
+                     <Label fx:id="errorLabel" alignment="CENTER" layoutX="422.0" layoutY="544.0" prefHeight="27.0" prefWidth="457.0" textFill="RED">
+                        <font>
+                           <Font size="18.0" />
+                        </font>
+                     </Label>
+                     <Label layoutX="461.0" layoutY="677.0" text="ПІБ учня: ">
+                        <font>
+                           <Font size="24.0" />
+                        </font>
+                     </Label>
+                     <Label fx:id="studName" layoutX="614.0" layoutY="677.0" prefHeight="35.0" prefWidth="325.0">
+                        <font>
+                           <Font size="24.0" />
+                        </font>
+                     </Label>
+                            <Label layoutX="461.0" layoutY="747.0" text="Лабораторні роботи, виконані учнем:">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="labName" layoutX="400.0" layoutY="797.0">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="867.0" text="Задача 1 (макс. 1 бал):">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="917.0" text="Відповідь учня:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="stAns1" layoutX="695.0" layoutY="917.0" >
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="967.0" text="Правильна відповідь:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="ans1" layoutX="695.0" layoutY="967.0">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1017.0" text="Бали учня за це завдання:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="ans1Mark" layoutX="695.0" layoutY="1017.0">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </TextField>
+
+                            <Label layoutX="400.0" layoutY="1087.0" text="Задача 2 (макс. 1 бал):">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1137.0" text="Відповідь учня:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="stAns2" layoutX="695.0" layoutY="1137.0" >
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1187.0" text="Правильна відповідь:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="ans2" layoutX="695.0" layoutY="1187.0">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1237.0" text="Бали учня за це завдання:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="ans2Mark" layoutX="695.0" layoutY="1237.0">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </TextField>
+
+                            <Label layoutX="400.0" layoutY="1307.0" text="Задача 3 (макс. 2 бали):">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1357.0" text="Відповідь учня:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="stAns3" layoutX="695.0" layoutY="1357.0" >
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1407.0" text="Правильна відповідь:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="ans3" layoutX="695.0" layoutY="1407.0">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1457.0" text="Бали учня за це завдання:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="ans3Mark" layoutX="695.0" layoutY="1457.0">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </TextField>
+
+                            <Label layoutX="400.0" layoutY="1527.0" text="Задача 4 (макс. 2 бали):">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1577.0" text="Відповідь учня:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="stAns4" layoutX="695.0" layoutY="1577.0" >
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1627.0" text="Правильна відповідь:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="ans4" layoutX="695.0" layoutY="1627.0">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1677.0" text="Бали учня за це завдання:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="ans4Mark" layoutX="695.0" layoutY="1677.0">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </TextField>
+
+                            <Label layoutX="400.0" layoutY="1747.0" text="Задача 5 (макс. 3 бали):">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1797.0" text="Відповідь учня:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="stAns5" layoutX="695.0" layoutY="1797.0" >
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1847.0" text="Правильна відповідь:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="ans5" layoutX="695.0" layoutY="1847.0">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="1897.0" text="Бали учня за це завдання:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="ans5Mark" layoutX="695.0" layoutY="1897.0">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </TextField>
+
+                            <Label layoutX="400.0" layoutY="1967.0" text="Задача 6 (макс. 3 бали):">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="2017.0" text="Відповідь учня:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="stAns6" layoutX="695.0" layoutY="2017.0" >
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="2067.0" text="Правильна відповідь:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="ans6" layoutX="695.0" layoutY="2067.0">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="2117.0" text="Бали учня за це завдання:">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="ans6Mark" layoutX="695.0" layoutY="2117.0">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </TextField>
+
+                            <Button layoutX="460.0" layoutY="2197.0" mnemonicParsing="false" onAction="#calcMark" stylesheets="@button_style.css" text="Розрахувати оцінку учня">
+                                <font>
+                                    <Font name="Segoe UI" size="24.0" />
+                                </font>
+                            </Button>
+                            <Label fx:id="errorLabel1" alignment="CENTER" layoutX="375.0" layoutY="2267.0" textFill="RED">
+                                <font>
+                                    <Font size="20.0" />
+                                </font>
+                            </Label>
+                            <Label layoutX="400.0" layoutY="2337.0" text="Оцінка учня за роботу: ">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Label fx:id="studMark" layoutX="690.0" layoutY="2337.0">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Button layoutX="485.0" layoutY="2407.0" mnemonicParsing="false" onAction="#saveMark" stylesheets="@button_style.css" text="Зберегти оцінку учня">
+                                <font>
+                                    <Font name="Segoe UI" size="24.0" />
+                                </font>
+                            </Button>
+                            <Label fx:id="markSave" layoutX="460.0" layoutY="2477.0">
+                                <font>
+                                    <Font size="24.0" />
+                                </font>
+                            </Label>
+                            <Button layoutX="567.5" layoutY="2527.0" mnemonicParsing="false" onAction="#exit" stylesheets="@exitButton_style.css" text="Вихід">
+                                <font>
+                                    <Font name="Segoe UI" size="24.0" />
+                                </font>
+                            </Button>
+                        </children>
+                    </Pane>
+                    <Label layoutX="67.0" layoutY="920.0" />
+                </children>
+            </VBox>
+        </content>
+    </ScrollPane>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="teacherAnchorPane" prefHeight="900" prefWidth="1600.0" stylesheets="@pane_style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolphysicslab.course_work.LoginAsTeacherController">
+    <Button alignment="BASELINE_LEFT" layoutX="174.0" layoutY="99.0" mnemonicParsing="false" onAction="#returnToMainStage" prefHeight="30.0" prefWidth="129.0" text="&lt; На головну">
+        <font>
+            <Font name="Segoe UI" size="14.0" />
+        </font></Button>
+    <Pane fx:id="teachLogInPane" layoutX="500.0" layoutY="131.0" prefHeight="600.0" prefWidth="600.0" styleClass="pane" stylesheets="@mainpane_style.css" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="675.0" AnchorPane.topAnchor="150.0">
+        <children>
+            <Label layoutX="212.0" layoutY="37.0" text="Увійти як вчитель">
+                <font>
+                    <Font name="Segoe UI Bold" size="24.0" />
+                </font>
+            </Label>
+            <Label layoutX="207.0" layoutY="126.0" text="Введіть адресу ел. пошти">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="emailField" layoutX="180.0" layoutY="167.0" prefHeight="39.0" prefWidth="260.0">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </TextField>
+            <Label layoutX="250.0" layoutY="247.0" text="Введіть пароль">
+                <font>
+                    <Font name="Segoe UI" size="18.0" />
+                </font>
+            </Label>
+            <PasswordField fx:id="passwordField" layoutX="198.0" layoutY="281.0">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </PasswordField>
+            <Button layoutX="246.0" layoutY="367.0" mnemonicParsing="false" onAction="#loginAsTeacher" stylesheets="@button_style.css" text="УВІЙТИ">
+                <font>
+                    <Font name="Segoe UI" size="24.0" />
+                </font>
+            </Button>
+            <Label layoutX="226.0" layoutY="490.0" text="Ще немає аккаунту?">
+                <font>
+                    <Font name="Segoe UI" size="18.0" />
+                </font>
+            </Label>
+            <Hyperlink layoutX="238.0" layoutY="529.0" onAction="#openTeacherRegisterStage" text="Зареєструватись">
+                <font>
+                    <Font name="Segoe UI" size="18.0" />
+                </font>
+            </Hyperlink>
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="116.0" layoutY="447.0" prefHeight="27.0" prefWidth="388.0" textFill="#f80202">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+        </children></Pane>
+
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="chooseLab7Pane" prefHeight="900.0" prefWidth="1600.0" stylesheets="@main_style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolphysicslab.course_work.LabController">
+   <children>
+      <Button alignment="BASELINE_LEFT" layoutX="174.0" layoutY="99.0" mnemonicParsing="false" onAction="#returnToMainStage" prefHeight="30.0" prefWidth="129.0" text="&lt; На головну">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="682.0" layoutY="312.0" mnemonicParsing="false" onAction="#openLab1Class7" prefHeight="105.0" prefWidth="640.0" stylesheets="@button_style.css" text="Лабораторна робота №1">
+         <font>
+            <Font name="Segoe UI" size="48.0" />
+         </font>
+      </Button>
+      <Button layoutX="951.0" layoutY="833.0" mnemonicParsing="false" onAction="#exit" stylesheets="@exitButton_style.css" text="Вихід">
+         <font>
+            <Font name="Segoe UI" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

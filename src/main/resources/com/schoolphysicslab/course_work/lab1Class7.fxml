@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" stylesheets="@pane_style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolphysicslab.course_work.LabController">
+   <children>
+      <Button alignment="BASELINE_LEFT" layoutX="99.0" layoutY="48.0" mnemonicParsing="false" onAction="#returnToMainStage1" prefHeight="30.0" prefWidth="129.0" text="&lt; На головну">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font></Button>
+      <ScrollPane fx:id="lab7Pane" fitToWidth="true" layoutX="331.0" layoutY="127.0" prefHeight="800.0" prefWidth="1300.0" styleClass="pane" stylesheets="@mainpane_style.css" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="325.0" AnchorPane.topAnchor="100.0">
+         <content>
+            <VBox prefHeight="1500.0">
+               <children>
+                  <Pane prefHeight="694.0" prefWidth="1294.0">
+                     <children>
+                        <Label layoutX="465.0" layoutY="50.0" text="Лабораторна робота №1">
+                           <font>
+                              <Font name="Segoe UI" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="477.0" layoutY="99.0" text="Сила тертя, пружності, тяжіння">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="146.0" text="ПІБ учня: ">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nameLabel" layoutX="187.0" layoutY="143.0" prefHeight="35.0" prefWidth="265.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="588.0" layoutY="146.0" text="Клас: ">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="classLabel" layoutX="650.0" layoutY="143.0" prefHeight="35.0" prefWidth="55.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="857.0" layoutY="152.0" text="Оберіть вчителя:">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="teacherChoiceBox" layoutX="1049.0" layoutY="154.0" prefHeight="5.0" prefWidth="205.0">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="Даниленко Дмитро Іванович" />
+                                 <String fx:value="Морозова Тетяна Олексіївна" />
+                                 <String fx:value="Петренко Іван Сергійович" />
+                              </FXCollections>
+                           </items>
+                        </ChoiceBox>
+                        <Label layoutX="67.0" layoutY="204.0" text="1. На тіло, що перебувало у стані спокою, одночасно подіяли три сили (див. малюнок). В який бік тіло почне рухатися, якщо  ">
+                           <font>
+                              <Font name="Segoe UI" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="244.0" text="сила F1 = 2H, F2 = 3H, F3 = 4H?  (1 бал)">
+                           <font>
+                              <Font name="Segoe UI" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="559.0" text="Відповідь:">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="ans1Lab7ChoiceBox" layoutX="203.0" layoutY="558.0" prefHeight="35.0" prefWidth="205.0">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="У лівий бік" />
+                                 <String fx:value="У правий бік" />
+                                 <String fx:value="Стоятиме на місці" />
+                              </FXCollections>
+                           </items>
+                        </ChoiceBox>
+                        <Label layoutX="68.0" layoutY="623.0" text="2. Знайти силу тертя для дерев'яного бруса масою 250г, якщо коефіціент тертя = 0,4  (1 бал)">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="674.0" text="Відповідь:">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="answer2Lab7" layoutX="187.0" layoutY="669.0" prefHeight="39.0" prefWidth="85.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="280.0" layoutY="674.0" text="Н">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="749.0" text="3. Обчислити силу тяжіння, яка діє на дубове поліно об'ємом 0,2м^3, якщо його щільність = 800 кг\м^3 (2 бали)">
+                           <font>
+                              <Font name="Segoe UI" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="805.0" text="Відповідь: ">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="answer3Lab7" layoutX="200.0" layoutY="803.0" prefHeight="35.0" prefWidth="83.0">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="300.0" layoutY="805.0" text="Н">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="70.0" layoutY="882.0" text="4. За допомогою пружини жорсткістю 96 Н\м тіло масою 2,4кг рівномірно рухається. Знайти видовження пружини">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="69.0" layoutY="922.0" text="коефіціент тертя = 0,2 (2 бали)">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="977.0" text="Відповідь: ">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="answer4Lab7" layoutX="200.0" layoutY="972.0" prefHeight="39.0" prefWidth="90.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="320.0" layoutY="977.0" text="м">
+                           <font>
+                              <Font name="Segoe UI" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="1052.0" text="5. Порівняти коефіціент тертя (μ) двох тіл, якщо при однаковій силі тертя маси різні (маса першого тіла = 0,2 кг, ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="1092.0" text="маса другого тіла = 0,6 кг).  (3 бали)">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="1137.0" text="Відповідь: ">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="ans5Lab7ChoiceBox" layoutX="203.0" layoutY="1137.0" prefHeight="35.0" prefWidth="205.0">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="μ1 більший за μ2 у 3 рази" />
+                                 <String fx:value="μ1 менший за μ2 у 3 рази" />
+                                 <String fx:value="μ1 = μ2 " />
+                              </FXCollections>
+                           </items>
+                        </ChoiceBox>
+                        <Label layoutX="67.0" layoutY="1212.0" text="6. Порівняти жорсткість (K) двох пружин, якщо при однаковому видовженні сила пружності різна (у першої пружини ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="1252.0" text="сила пружності = 8Н, у другої = 16Н).  (3 бали)">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="67.0" layoutY="1297.0" text="Відповідь: ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="ans6Lab7ChoiceBox" layoutX="203.0" layoutY="1297.0" prefHeight="35.0" prefWidth="205.0">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="K1 більша за K2 у 2 рази" />
+                                 <String fx:value="K1 менша за K2 у 2 рази" />
+                                 <String fx:value="K1 = K2 " />
+                              </FXCollections>
+                           </items>
+                        </ChoiceBox>
+                        <Button layoutX="500.0" layoutY="1350.0" mnemonicParsing="false" onAction="#saveAnswers" stylesheets="@button_style.css" text="Зберегти відповіді">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="277.0" fitWidth="749.0" layoutX="306.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@lab1_8.PNG" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="errorLabel" layoutX="500.0" layoutY="1420.0" prefHeight="30.0" prefWidth="394.0" textFill="#f00202">
+                           <font>
+                              <Font name="Segoe UI" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="67.0" layoutY="920.0" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

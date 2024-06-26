@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" stylesheets="@pane_style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.schoolphysicslab.course_work.LabController">
+    <children>
+        <Button alignment="BASELINE_LEFT" layoutX="99.0" layoutY="48.0" mnemonicParsing="false" onAction="#returnToMainStage1" prefHeight="30.0" prefWidth="129.0" text="&lt; На головну">
+            <font>
+                <Font name="Segoe UI" size="14.0" />
+            </font></Button>
+        <ScrollPane fx:id="lab9Pane" fitToWidth="true" layoutX="331.0" layoutY="127.0" prefHeight="800.0" prefWidth="1300.0" styleClass="pane" stylesheets="@mainpane_style.css" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="325.0" AnchorPane.topAnchor="100.0">
+            <content>
+                <VBox prefHeight="1250.0">
+                        <children>
+                            <Pane prefHeight="694.0" prefWidth="1294.0">
+                                <children>
+                                    <Label layoutX="465.0" layoutY="50.0" text="Лабораторна робота №1">
+                                        <font>
+                                            <Font name="Segoe UI" size="32.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="428.0" layoutY="102.0" text="Світло. Хвилі. Сила всесвітнього тяжіння">
+                                        <font>
+                                            <Font name="Segoe UI" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="146.0" text="ПІБ учня: ">
+                                        <font>
+                                            <Font name="Segoe UI" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <Label fx:id="nameLabel" layoutX="187.0" layoutY="143.0" prefHeight="35.0" prefWidth="265.0">
+                                        <font>
+                                            <Font size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="588.0" layoutY="146.0" text="Клас: ">
+                                        <font>
+                                            <Font name="Segoe UI" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <Label fx:id="classLabel" layoutX="650.0" layoutY="143.0" prefHeight="35.0" prefWidth="55.0">
+                                        <font>
+                                            <Font size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="857.0" layoutY="152.0" text="Оберіть вчителя:">
+                                        <font>
+                                            <Font name="Segoe UI" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="teacherChoiceBox" layoutX="1049.0" layoutY="154.0" prefHeight="25.0" prefWidth="205.0">
+                                        <items>
+                                            <FXCollections fx:factory="observableArrayList">
+                                                <String fx:value="Даниленко Дмитро Іванович" />
+                                                <String fx:value="Морозова Тетяна Олексіївна" />
+                                                <String fx:value="Петренко Іван Сергійович" />
+                                            </FXCollections>
+                                        </items>
+                                    </ChoiceBox>
+                                    <Label layoutX="67.0" layoutY="204.0" text="1. Через який час повернеться запущений з Землі та відбитий від космічного апарату світловий сигнал, якщо він знаходиться на ">
+                                        <font>
+                                            <Font name="Segoe UI" size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="238.0" text="відстані 1500 км від Землі?">
+                                        <font>
+                                            <Font name="Segoe UI" size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="293.0" text="Відповідь:">
+                                        <font>
+                                            <Font name="Segoe UI" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="answer1Lab9" layoutX="190.0" layoutY="288.0" prefHeight="39.0" prefWidth="109.0">
+                                        <font>
+                                            <Font size="18.0" />
+                                        </font>
+                                    </TextField>
+                                    <Label layoutX="305.0" layoutY="296.0" text="с.">
+                                        <font>
+                                            <Font name="Segoe UI" size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="350.0" text="2. Обчислити частоту та швидкість хвилі, якщо відстань між сусідніми гребенями дорівнює 6 м та за 8 секунд пройшли 4 гребені?">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="408.0" text="Відповідь:">
+                                        <font>
+                                            <Font name="Segoe UI" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="203.0" layoutY="411.0" text="Частота хвилі = ">
+                                        <font>
+                                            <Font name="Segoe UI" size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="answer2_1Lab9" layoutX="353.0" layoutY="403.0" prefHeight="39.0" prefWidth="70.0">
+                                        <font>
+                                            <Font size="18.0" />
+                                        </font>
+                                    </TextField>
+                                    <Label layoutX="428.0" layoutY="408.0" text="Гц">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="526.0" layoutY="408.0" text="Швидкість хвилі = ">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="answer2_2Lab9" layoutX="697.0" layoutY="403.0" prefHeight="39.0" prefWidth="63.0">
+                                        <font>
+                                            <Font size="18.0" />
+                                        </font>
+                                    </TextField>
+                                    <Label layoutX="769.0" layoutY="408.0" text="м\с">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="472.0" text="3. Обчислити діапазон довжин звукових хвиль, якщо мінімальна частота = 20 Гц, максимальна частота = 2000 Гц, ">
+                                        <font>
+                                            <Font name="Segoe UI" size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="511.0" text="швидкість = 340 м\с">
+                                        <font>
+                                            <Font name="Segoe UI" size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="564.0" text="Відповідь: ">
+                                        <font>
+                                            <Font name="Segoe UI" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="203.0" layoutY="564.0" text="Мінімальна довжина = ">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="answer3_1Lab9" layoutX="423.0" layoutY="562.0" prefHeight="35.0" prefWidth="83.0">
+                                        <font>
+                                            <Font name="Segoe UI" size="18.0" />
+                                        </font>
+                                    </TextField>
+                                    <Label layoutX="519.0" layoutY="565.0" text="м">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="619.0" layoutY="565.0" text="Максимальна довжина = ">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="answer3_2Lab9" layoutX="857.0" layoutY="559.0" prefHeight="39.0" prefWidth="81.0">
+                                        <font>
+                                            <Font size="18.0" />
+                                        </font>
+                                    </TextField>
+                                    <Label layoutX="950.0" layoutY="565.0" text="м">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="637.0" text="4. Спостерігач почув звук у повітрі через 1,85 секунди після того, як почув його у воді. Обчислити  швидкість звуку у воді, якщо">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="677.0" text="його швидкість у повітрі = 330 м\с, відстань до джерела звуку = 800 м">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="730.0" text="Відповідь: ">
+                                        <font>
+                                            <Font name="Segoe UI" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="answer4Lab9" layoutX="190.0" layoutY="725.0" prefHeight="39.0" prefWidth="90.0">
+                                        <font>
+                                            <Font size="18.0" />
+                                        </font>
+                                    </TextField>
+                                    <Label layoutX="305.0" layoutY="730.0" text="м\с">
+                                        <font>
+                                            <Font name="Segoe UI" size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="817.0" text="5. Обчислити силу взаємодії між двома кораблями, що знаходяться у воді на відстані 100 м один від одного, якщо маса ">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="857.0" text="кожного корабля дорівнює 50 000 тонн">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="910.0" text="Відповідь: ">
+                                        <font>
+                                            <Font name="Segoe UI" size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="answer5Lab9" layoutX="190.0" layoutY="905.0" prefHeight="39.0" prefWidth="90.0">
+                                        <font>
+                                            <Font size="18.0" />
+                                        </font>
+                                    </TextField>
+                                    <Label layoutX="305.0" layoutY="910.0" text="Н ">
+                                        <font>
+                                            <Font name="Segoe UI" size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="997.0" text="6. Обчислити відстань між Сонцем та Землею, якщо маса Сонця = 2 * 10^30 кг, маса Землі = 6 * 10^24 кг, а сила ">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="1037.0" text="взаємодії між ними = 3,5 * 10^22 Н (Відповідь надати в наступному вигляді: число * 10^число)">
+                                        <font>
+                                            <Font size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Label layoutX="67.0" layoutY="1090.0" text="Відповідь: ">
+                                        <font>
+                                            <Font size="24.0" />
+                                        </font>
+                                    </Label>
+                                    <TextField fx:id="answer6Lab9" layoutX="190.0" layoutY="1085.0" prefHeight="39.0" prefWidth="125.0">
+                                        <font>
+                                            <Font size="18.0" />
+                                        </font>
+                                    </TextField>
+                                    <Label layoutX="335.0" layoutY="1090.0" text="м ">
+                                        <font>
+                                            <Font name="Segoe UI" size="20.0" />
+                                        </font>
+                                    </Label>
+                                    <Button layoutX="500.0" layoutY="1150.0" mnemonicParsing="false" onAction="#saveAnswers" stylesheets="@button_style.css" text="Зберегти відповіді">
+                                        <font>
+                                            <Font name="Segoe UI" size="24.0" />
+                                        </font>
+                                    </Button>
+                                    <Label fx:id="errorLabel" layoutX="500.0" layoutY="1200.0" prefHeight="30.0" prefWidth="394.0" textFill="#f00202">
+                                        <font>
+                                            <Font name="Segoe UI" size="24.0" />
+                                        </font>
+                                    </Label>
+                                </children>
+                            </Pane>
+                            <Label layoutX="67.0" layoutY="920.0" />
+                        </children>
+                </VBox>
+            </content>
+         </ScrollPane>
+    </children>
+</AnchorPane>
