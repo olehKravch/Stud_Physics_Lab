@@ -1,5 +1,5 @@
 [EN]
-The "Stud Physics Lab" is an example of a desktop application created for performing laboratory works in Physics for students form 7th to 9th grades. Students can register and log into their accounts, information about which is stored in the MySQL database "schoolphysicslab_db".
+The "Stud Physics Lab" is an example of a desktop application created for performing laboratory works in Physics for students from 7th to 9th grades. Students can register and log into their accounts, information about which is stored in the MySQL database "schoolphysicslab_db".
 Students choose a laboratory work and enter the answers to the work tasks into text fields, after which they are stored in the "results" table of the database. Teachers can also register and log into their accounts and check student results. The application is written in Java using JavaFX and CSS.	
 
 
